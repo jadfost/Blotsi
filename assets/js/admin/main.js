@@ -196,6 +196,7 @@ const DeleteCourse_S2 = (id, courseName) => {
 
 
 const showAMB = () => {
+    CursosCreados()
     ListCourses()
     $('#Modal_ListCourses').modal('toggle')
 }
