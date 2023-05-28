@@ -90,7 +90,7 @@ function addCourse(form, e) {
     // Agrega el segundo curso adicional
     courses.push({
         name: "Javascript II",
-        description: "Descripcion",
+        description: "Si hay un programa esencial por su versatilidad y utilidad en múltiples profesiones y aplicaciones, ése es Photoshop. Siendo el software profesional standard de edición, composición, pintura y retoque de la imagen digital, es tan imprescindible para fotógrafos, artistas digitales y diseñadores como para cualquier aficionado que desee realizar proyectos tan variados como un folleto, una presentación o un calendario familiar.",
         category: "Programación",
         price: 10000,
         vacancies: 30,
