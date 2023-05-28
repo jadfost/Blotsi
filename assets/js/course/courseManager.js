@@ -21,11 +21,18 @@ getCoursesFromDB = async () => {
 
     try {
         const result = await fetch(dirName);
-        return await result.json();
+        const courses = await result.json();
+
+        courses.forEach(course => {
+            course.video = course.videoUrl; // Agrega la propiedad "video" con la URL del video
+        });
+
+        return courses;
     } catch (error) {
         console.log(`Se ha producido un error: ${error}`);
     }
 };
+
 
 function convCourseToClass(Obj_Courses) {
     //Convierte al Objeto Prototipo 'Course'
@@ -39,7 +46,7 @@ function convCourseToClass(Obj_Courses) {
                 element.vacancies,
                 element.teacher,
                 element.conditions,
-                element.ico
+                element.ico,
             )
         );
     });

@@ -84,7 +84,8 @@ function addCourse(form, e) {
         vacancies: 0,
         teacher: 20353630017,
         conditions: "Sin requisitos previos",
-        ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png"
+        ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png",
+        video: "https://www.youtube.com/watch?v=ykGRYEX0n60&ab_channel=BitechStudio"
     });
 
     // Agrega el segundo curso adicional
@@ -96,7 +97,8 @@ function addCourse(form, e) {
         vacancies: 30,
         teacher: 20353630017,
         conditions: "Haber cursado Javascript I o realizar examen",
-        ico: "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg"
+        ico: "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
+        video: "https://www.youtube.com/watch?v=ykGRYEX0n60&ab_channel=BitechStudio"
     });
 
      // Agrega el terce curso adicional
@@ -108,7 +110,8 @@ function addCourse(form, e) {
         vacancies: 20,
         teacher: 20353630017,
         conditions: "Haber cusado Javascript II o realizar examen",
-        ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png"
+        ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png",
+        video: "https://www.youtube.com/watch?v=ykGRYEX0n60&ab_channel=BitechStudio"
     });
 
     // Lo guarda en el LocalStorage    
