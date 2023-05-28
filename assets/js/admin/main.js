@@ -85,7 +85,6 @@ function addCourse(form, e) {
         teacher: 20353630017,
         conditions: "Sin requisitos previos",
         ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png",
-        video: "assets/img/Programming.mp4"
     });
 
     // Agrega el segundo curso adicional
@@ -98,7 +97,6 @@ function addCourse(form, e) {
         teacher: 20353630017,
         conditions: "Haber cursado Javascript I o realizar examen",
         ico: "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
-        video: "assets/img/Programming.mp4"
     });
 
      // Agrega el terce curso adicional
@@ -111,7 +109,6 @@ function addCourse(form, e) {
         teacher: 20353630017,
         conditions: "Haber cusado Javascript II o realizar examen",
         ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png",
-        video: "assets/img/Programming.mp4"
     });
 
     // Lo guarda en el LocalStorage    
@@ -145,22 +142,10 @@ function ListCourses() {
                     <a id="del_S1_${index}" onclick="DeleteCourse_S1(${index})" class="btn-delete"><i class="far fa-trash-alt"></i></a>
                 </div>
 
-                <div class="col-auto">
-                    <a id="video_${index}" href="#" class="btn-video"><i class="fas fa-play-circle"></i></a>
-                </div>
-
             </div>
         </li>`
     ).join("")
     $("#ListCourses").html(html)
-    // Agregar descripción y video al hacer clic en el enlace de video
-    courses.forEach((course, index) => {
-        $(`#video_${index}`).click(() => {
-            $("#courseDescription").text(course.description);
-            $("#courseVideo").attr("src", course.video);
-            $("#courseVideo")[0].play();
-        });
-    });
 }
 
 function DeleteCourse_S1(id) {
