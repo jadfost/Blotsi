@@ -39,9 +39,7 @@ function refreshStatistics() {
 
 
 }
-
-
-function addCourse(form, e) {
+function CursosCreados(form, e) {
     e.preventDefault()
 
     // Obtiene los datos anteriores
@@ -52,28 +50,6 @@ function addCourse(form, e) {
 
     // Verifica si es una modificación o un alta
     let index = elements[elements.length - 1].value
-
-    if (index) {
-        // Modificación
-
-        for (const key of elements) {
-            key_ad = key.id.toLowerCase().split("").splice(3, 100).join("")
-            courses[index][key_ad] = key.value
-        }
-
-    } else {
-        // Alta
-
-        courses.push(new Course(
-            elements[0].value,
-            elements[1].value,
-            elements[2].value,
-            elements[3].value,
-            elements[4].value,
-            elements[5].value,
-            elements[6].value,
-            elements[7].value))
-    }
 
     // Agrega el curso adicional
     courses.push({
@@ -110,6 +86,49 @@ function addCourse(form, e) {
         conditions: "Haber cusado Javascript II o realizar examen",
         ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png"
     });
+
+    // Lo guarda en el LocalStorage    
+    UpdateLocalStorage("courses", courses)
+
+    // Actualiza estadísticas y modal
+    refreshStatistics()
+    ListCourses()
+};
+
+
+function addCourse(form, e) {
+    e.preventDefault()
+
+    // Obtiene los datos anteriores
+    let courses = getLS("courses") || []
+
+    // Obtiene los datos del formulario
+    elements = $(`#${form} :input`)
+
+    // Verifica si es una modificación o un alta
+    let index = elements[elements.length - 1].value
+
+    if (index) {
+        // Modificación
+
+        for (const key of elements) {
+            key_ad = key.id.toLowerCase().split("").splice(3, 100).join("")
+            courses[index][key_ad] = key.value
+        }
+
+    } else {
+        // Alta
+
+        courses.push(new Course(
+            elements[0].value,
+            elements[1].value,
+            elements[2].value,
+            elements[3].value,
+            elements[4].value,
+            elements[5].value,
+            elements[6].value,
+            elements[7].value))
+    }
 
     // Lo guarda en el LocalStorage    
     UpdateLocalStorage("courses", courses)
