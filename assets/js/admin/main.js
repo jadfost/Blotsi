@@ -125,7 +125,7 @@ function addCourse(form, e) {
 
     // Agrega el curso adicional
     courses.push({
-        name: "Photoshop",
+        name: "Adobe Premiere",
         description: "Si hay un programa esencial por su versatilidad y utilidad en múltiples profesiones y aplicaciones, ése es Photoshop. Siendo el software profesional standard de edición, composición, pintura y retoque de la imagen digital, es tan imprescindible para fotógrafos, artistas digitales y diseñadores como para cualquier aficionado que desee realizar proyectos tan variados como un folleto, una presentación o un calendario familiar.",
         category: "Diseño",
         price: 20000,
@@ -137,7 +137,7 @@ function addCourse(form, e) {
 
     // Agrega el segundo curso adicional
     courses.push({
-        name: "Javascript II",
+        name: "Angular",
         description: "Si hay un programa esencial por su versatilidad y utilidad en múltiples profesiones y aplicaciones, ése es Photoshop. Siendo el software profesional standard de edición, composición, pintura y retoque de la imagen digital, es tan imprescindible para fotógrafos, artistas digitales y diseñadores como para cualquier aficionado que desee realizar proyectos tan variados como un folleto, una presentación o un calendario familiar.",
         category: "Programación",
         price: 10000,
@@ -149,7 +149,7 @@ function addCourse(form, e) {
 
     // Agrega el terce curso adicional
     courses.push({
-        name: "Node.js",
+        name: "React.js",
         description: "NodeJS, es básicamente un framework para implementar operaciones de entrada y salida. Está basado en eventos, streams y construido sobre del motor de Javascript V8, que es con el que funciona el Javascript de Google Chrome. NodeJS se programa del lado del servidor, lo que indica que los procesos para el desarrollo de software en 'Node' se realizan de una manera muy diferente que los de Javascript del lado del cliente. Basándose en los conceptos de la programación asíncrona y la programación orientada a eventos, con la particularidad que los eventos en esta plataforma son orientados a cosas que suceden del lado del servidor y no del lado del cliente como los que conocemos anteriormente en Javascript 'común'. Express es un microframework basado en Node JS que nos permitirá desarrollar una API REST. Mediante Node JS + express + Mongo DB desarrollaremos una api rest realizando una operación de tipo CRUD de ejemplo (Create, read, update, delete)",
         category: "Programación",
         price: 20000,
@@ -161,7 +161,7 @@ function addCourse(form, e) {
 
     // Agrega el cuarto curso adicional
     courses.push({
-        name: "Publicidad en redes",
+        name: "Publicidad Avanzada",
         description: "A medida que Internet evoluciona y gana en rapidez y potencia, y a su vez las computadoras y dispositivos móviles cada vez poseen mayores presetaciones, las redes socilales de imágen y video van ganando lugar y generando nuevas herramientas de confección y edición de contenido. La red social de imágenes lider actualmente es Instagram, que ha desarrollado Instagram Ads, herramienta que nos permitirá realizar campañas de marketing digital eficientes, aprovechando la gran cantidad de usuarios. La red social de video lider actualmente es Youtube, que pertenece a Google Inc. En este momento Youtube cuenta con varias posibilidades de desarrollo como herramienta de marketing digital ( videomarketing), que también analizaremos y practicaremos en este curso.",
         category: "Marketing",
         price: 18000,
