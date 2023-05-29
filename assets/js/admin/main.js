@@ -103,12 +103,36 @@ function addCourse(form, e) {
      courses.push({
         name: "Node.js",
         description: "NodeJS, es básicamente un framework para implementar operaciones de entrada y salida. Está basado en eventos, streams y construido sobre del motor de Javascript V8, que es con el que funciona el Javascript de Google Chrome. NodeJS se programa del lado del servidor, lo que indica que los procesos para el desarrollo de software en 'Node' se realizan de una manera muy diferente que los de Javascript del lado del cliente. Basándose en los conceptos de la programación asíncrona y la programación orientada a eventos, con la particularidad que los eventos en esta plataforma son orientados a cosas que suceden del lado del servidor y no del lado del cliente como los que conocemos anteriormente en Javascript 'común'. Express es un microframework basado en Node JS que nos permitirá desarrollar una API REST. Mediante Node JS + express + Mongo DB desarrollaremos una api rest realizando una operación de tipo CRUD de ejemplo (Create, read, update, delete)",
-        category: "Diseño",
+        category: "Programación",
         price: 20000,
         vacancies: 20,
         teacher: 20353630017,
         conditions: "Haber cusado Javascript II o realizar examen",
         ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png",
+    });
+
+    // Agrega el cuarto curso adicional
+    courses.push({
+        name: "Publicidad en redes",
+        description: "A medida que Internet evoluciona y gana en rapidez y potencia, y a su vez las computadoras y dispositivos móviles cada vez poseen mayores presetaciones, las redes socilales de imágen y video van ganando lugar y generando nuevas herramientas de confección y edición de contenido. La red social de imágenes lider actualmente es Instagram, que ha desarrollado Instagram Ads, herramienta que nos permitirá realizar campañas de marketing digital eficientes, aprovechando la gran cantidad de usuarios. La red social de video lider actualmente es Youtube, que pertenece a Google Inc. En este momento Youtube cuenta con varias posibilidades de desarrollo como herramienta de marketing digital ( videomarketing), que también analizaremos y practicaremos en este curso.",
+        category: "Marketing",
+        price: 18000,
+        vacancies: 1,
+        teacher: 20353630017,
+        conditions: "Conocimientos generales sobre internet",
+        ico: "https://iconape.com/wp-content/files/hl/203107/png/A4_Publicidade-logo.png"
+    });
+
+    // Agrega el quinto curso adicional
+    courses.push({
+        name: "After Effect",
+        description: "Si te interesa tratar el vídeo de una forma más creativa, desde proyectos animados muy elaborados hasta un GIF para redes sociales creativo y divertido, con este curso aprenderás desde cero a utilizar el software líder indiscutible para lograrlo: Adobe After Effects. A través de lecciones prácticas descubrirás todo lo que necesitas saber para convertirte en un profesional del diseño de animaciones.\nTienes ante ti un método riguroso y lleno de recursos con el que te convertirás en un motion grapher avanzado. Empezarás conociendo la interfaz y el flujo de trabajo propio de After Effects para poder trabajar de forma eficaz.\nMás adelante, empezarás a usar máscaras y capas, elementos fundamentales para la animación en 2D. Crearás diferentes efectos de vídeo y aprenderás a usar el animador de texto y expresiones de animación.\nTambién verás el espacio 3D y el manejo de cámaras y luces, así como la composición en tres dimensiones de diferentes elementos importados de otros programas.\nPor último, Zenzuke te revelará sus técnicas avanzadas de motion graphics, trucos y scripts con los que podrás ampliar aun más las posibilidades de After Effects.",
+        category: "Diseño",
+        price: 20000,
+        vacancies: 25,
+        teacher: 20353630017,
+        conditions: "Sin requisitos previos",
+        ico: "https://es.wikipedia.org/wiki/Adobe_After_Effects#/media/Archivo:Adobe_After_Effects_CC_icon.png"
     });
 
     // Lo guarda en el LocalStorage    
