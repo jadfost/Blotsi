@@ -123,17 +123,54 @@ function addCourse(form, e) {
         ico: "https://iconape.com/wp-content/files/hl/203107/png/A4_Publicidade-logo.png"
     });
 
-    // Agrega el quinto curso adicional
+    // Agrega el curso adicional
     courses.push({
-        name: "After Effect",
-        description: "Si te interesa tratar el vídeo de una forma más creativa, desde proyectos animados muy elaborados hasta un GIF para redes sociales creativo y divertido, con este curso aprenderás desde cero a utilizar el software líder indiscutible para lograrlo: Adobe After Effects. A través de lecciones prácticas descubrirás todo lo que necesitas saber para convertirte en un profesional del diseño de animaciones.\nTienes ante ti un método riguroso y lleno de recursos con el que te convertirás en un motion grapher avanzado. Empezarás conociendo la interfaz y el flujo de trabajo propio de After Effects para poder trabajar de forma eficaz.\nMás adelante, empezarás a usar máscaras y capas, elementos fundamentales para la animación en 2D. Crearás diferentes efectos de vídeo y aprenderás a usar el animador de texto y expresiones de animación.\nTambién verás el espacio 3D y el manejo de cámaras y luces, así como la composición en tres dimensiones de diferentes elementos importados de otros programas.\nPor último, Zenzuke te revelará sus técnicas avanzadas de motion graphics, trucos y scripts con los que podrás ampliar aun más las posibilidades de After Effects.",
+        name: "Photoshop",
+        description: "Si hay un programa esencial por su versatilidad y utilidad en múltiples profesiones y aplicaciones, ése es Photoshop. Siendo el software profesional standard de edición, composición, pintura y retoque de la imagen digital, es tan imprescindible para fotógrafos, artistas digitales y diseñadores como para cualquier aficionado que desee realizar proyectos tan variados como un folleto, una presentación o un calendario familiar.",
         category: "Diseño",
         price: 20000,
-        vacancies: 25,
+        vacancies: 0,
         teacher: 20353630017,
         conditions: "Sin requisitos previos",
-        ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png"
+        ico: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/512px-Adobe_Photoshop_CC_icon.svg.png",
     });
+
+    // Agrega el segundo curso adicional
+    courses.push({
+        name: "Javascript II",
+        description: "Si hay un programa esencial por su versatilidad y utilidad en múltiples profesiones y aplicaciones, ése es Photoshop. Siendo el software profesional standard de edición, composición, pintura y retoque de la imagen digital, es tan imprescindible para fotógrafos, artistas digitales y diseñadores como para cualquier aficionado que desee realizar proyectos tan variados como un folleto, una presentación o un calendario familiar.",
+        category: "Programación",
+        price: 10000,
+        vacancies: 30,
+        teacher: 20353630017,
+        conditions: "Haber cursado Javascript I o realizar examen",
+        ico: "https://iconape.com/wp-content/files/vr/353405/svg/javascript-js-seeklogo.com.svg",
+    });
+
+    // Agrega el terce curso adicional
+    courses.push({
+        name: "Node.js",
+        description: "NodeJS, es básicamente un framework para implementar operaciones de entrada y salida. Está basado en eventos, streams y construido sobre del motor de Javascript V8, que es con el que funciona el Javascript de Google Chrome. NodeJS se programa del lado del servidor, lo que indica que los procesos para el desarrollo de software en 'Node' se realizan de una manera muy diferente que los de Javascript del lado del cliente. Basándose en los conceptos de la programación asíncrona y la programación orientada a eventos, con la particularidad que los eventos en esta plataforma son orientados a cosas que suceden del lado del servidor y no del lado del cliente como los que conocemos anteriormente en Javascript 'común'. Express es un microframework basado en Node JS que nos permitirá desarrollar una API REST. Mediante Node JS + express + Mongo DB desarrollaremos una api rest realizando una operación de tipo CRUD de ejemplo (Create, read, update, delete)",
+        category: "Programación",
+        price: 20000,
+        vacancies: 20,
+        teacher: 20353630017,
+        conditions: "Haber cusado Javascript II o realizar examen",
+        ico: "https://iconape.com/wp-content/png_logo_vector/node-js.png",
+    });
+
+    // Agrega el cuarto curso adicional
+    courses.push({
+        name: "Publicidad en redes",
+        description: "A medida que Internet evoluciona y gana en rapidez y potencia, y a su vez las computadoras y dispositivos móviles cada vez poseen mayores presetaciones, las redes socilales de imágen y video van ganando lugar y generando nuevas herramientas de confección y edición de contenido. La red social de imágenes lider actualmente es Instagram, que ha desarrollado Instagram Ads, herramienta que nos permitirá realizar campañas de marketing digital eficientes, aprovechando la gran cantidad de usuarios. La red social de video lider actualmente es Youtube, que pertenece a Google Inc. En este momento Youtube cuenta con varias posibilidades de desarrollo como herramienta de marketing digital ( videomarketing), que también analizaremos y practicaremos en este curso.",
+        category: "Marketing",
+        price: 18000,
+        vacancies: 1,
+        teacher: 20353630017,
+        conditions: "Conocimientos generales sobre internet",
+        ico: "https://iconape.com/wp-content/files/hl/203107/png/A4_Publicidade-logo.png"
+    });
+
 
     // Lo guarda en el LocalStorage    
     UpdateLocalStorage("courses", courses)
