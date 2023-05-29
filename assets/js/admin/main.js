@@ -132,7 +132,7 @@ function addCourse(form, e) {
         vacancies: 25,
         teacher: 20353630017,
         conditions: "Sin requisitos previos",
-        ico: ""
+        ico: "https://iconape.com/wp-content/files/no/373278/png/373278.png"
     });
 
     // Lo guarda en el LocalStorage    
